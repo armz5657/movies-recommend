@@ -45,9 +45,9 @@ def recommend_movie(movie_name, num_recommendations=5):
 # ส่วนของ Web Application
 # ==============================
 st.title("🎬 Movie Recommendation System")
-st.write("🔎 ป้อนชื่อหนังที่คุณชอบ แล้วระบบจะแนะนำหนังที่คล้ายกันให้!")
+st.write("🔎 ป้อนชื่อหนังที่ชอบ แล้วระบบจะแนะนำหนังที่คล้ายกันให้!")
 
-movie_name = st.text_input("📌 ป้อนชื่อหนังที่คุณชอบ:", "")
+movie_name = st.text_input("📌 ป้อนชื่อหนังที่ชอบ:", "")
 
 if st.button("แนะนำหนัง 🎥"):
     recommended_movies = recommend_movie(movie_name)
