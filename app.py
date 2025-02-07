@@ -7,7 +7,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 @st.cache_data
 def load_data():
     movies = pd.read_csv("movies.csv")
-    ratings = pd.read_csv("ratings.csv") 
 
     movies = movies.head(288983)
 
