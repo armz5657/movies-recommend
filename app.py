@@ -4,7 +4,6 @@ import streamlit as st
 from sklearn.neighbors import NearestNeighbors
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
 @st.cache_data
 def load_data():
     movies = pd.read_csv("movies.csv")
