@@ -1,11 +1,8 @@
-pip install -U scikit-learn
-
 import pandas as pd
 import numpy as np
 import streamlit as st
 from sklearn.neighbors import NearestNeighbors
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 
 @st.cache_data
 def load_data():
